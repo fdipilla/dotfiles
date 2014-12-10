@@ -62,3 +62,8 @@
         ("MEDIA" :background "yellow" :foreground "white" )
         ("BAJA" :background "green" :foreground "white" )
         ))
+
+
+
+;; que se incluya mi diary
+(setq org-agenda-include-diary t)
