@@ -46,3 +46,12 @@
 
 
 (setq org-agenda-files (list "~/horas" "~/todo-git.org"))
+
+
+(setq org-todo-keywords
+      '((sequence "TODO"
+                  "ALTA"
+                  "MEDIA"
+                  "BAJA"
+                  "DONE"
+                  )))
