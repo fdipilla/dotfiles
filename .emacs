@@ -55,3 +55,10 @@
                   "BAJA"
                   "DONE"
                   )))
+
+(setq org-todo-keyword-faces
+      '(
+        ("ALTA" :background "red" :foreground "white" )
+        ("MEDIA" :background "yellow" :foreground "white" )
+        ("BAJA" :background "green" :foreground "white" )
+        ))
