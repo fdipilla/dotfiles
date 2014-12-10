@@ -43,3 +43,6 @@
 (setq org-log-done t)
 (setq org-agenda-include-diary t)
 (setq org-agenda-files (quote ("/usr/share/calendar/calendar.*")))
+
+
+(setq org-agenda-files (list "~/horas" "~/todo-git.org"))
