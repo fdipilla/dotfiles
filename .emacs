@@ -16,3 +16,10 @@
 
 ;;; Imprimo la hora y los minutos en formato [HH:MM]
 (global-set-key "\C-c\h" "\[\C-u\M-! date +\"%H:%M\"\]")
+
+
+;;; Imprimo la apertura de una caja
+(global-set-key (kbd "<f5>") "|---┐")
+
+;;; Imprimo el cierre de una caja
+(global-set-key (kbd "<f6>") "|---┘")
