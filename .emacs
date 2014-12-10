@@ -23,3 +23,9 @@
 
 ;;; Imprimo el cierre de una caja
 (global-set-key (kbd "<f6>") "|---┘")
+
+;;; Imprimo espacios en vez de tabs
+(setq-default indent-tabs-mode nil)
+
+;;; Seteo el identado a 4 espacios
+(setq-default c-basic-offset 4)
