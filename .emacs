@@ -67,3 +67,7 @@
 
 ;; que se incluya mi diary
 (setq org-agenda-include-diary t)
+
+
+;; Uso Shift y las flechas para moverme en los panes
+(windmove-default-keybindings)
