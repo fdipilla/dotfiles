@@ -1,1 +1,2 @@
 #
+alias emacs='emacs -nw'
