@@ -83,3 +83,7 @@
                     (concat "   <" (format-time-string "%Y-%m-%d %a %H:%M") "> - Llego"))))
 
 (global-set-key (kbd "C-c b") 'fabri-buen-dia)
+
+;; Para depurar PHP
+(setq load-path (cons "~/geben-0.26" load-path))
+(require 'geben)
