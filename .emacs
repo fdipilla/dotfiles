@@ -87,3 +87,6 @@
 ;; Para depurar PHP
 (setq load-path (cons "~/geben-0.26" load-path))
 (require 'geben)
+
+;; Cargo mi theme
+(load-theme 'tangotango)
