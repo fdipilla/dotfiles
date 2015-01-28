@@ -33,7 +33,8 @@
 ;;; Seteo el identado a 4 espacios
 (setq-default c-basic-offset 4)
 
-;;; Seteo el identado en 4 para HTML                                                                                  (add-hook 'html-mode-hook
+;;; Seteo el identado en 4 para HTML
+(add-hook 'html-mode-hook
     (lambda ()
         (set (make-local-variable 'sgml-basic-offset) 4)))
 
@@ -85,3 +86,10 @@
                     (concat "   <" (format-time-string "%Y-%m-%d %a %H:%M") "> - Llego"))))
 
 (global-set-key (kbd "C-c b") 'fabri-buen-dia)
+
+;; Para depurar PHP
+(setq load-path (cons "~/geben-0.26" load-path))
+(require 'geben)
+
+;; Cargo mi theme
+(load-theme 'tangotango)
