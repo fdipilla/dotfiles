@@ -14,6 +14,9 @@
 ;;; Con M-p hago un printf de C
 (global-set-key "\M-p" "printf(\"\\n%s\",);") 
 
+;;; Un error_log de php
+(global-set-key "\C-x\p" "error_log(var_export(true));\M-b,\C-b")
+
 ;;; Imprimo la hora y los minutos en formato [HH:MM]
 (global-set-key "\C-c\h" "\[\C-u\M-! date +\"%H:%M\"\]")
 
