@@ -87,6 +87,13 @@
 
 (global-set-key (kbd "C-c b") 'fabri-buen-dia)
 
+
+(defun fabri-previous-window()
+  (interactive)
+  (other-window -1))
+
+(global-set-key (kbd "C-c o") 'fabri-previous-window)
+
 ;; Para depurar PHP
 (setq load-path (cons "~/geben-0.26" load-path))
 (require 'geben)
