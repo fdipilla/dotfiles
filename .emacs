@@ -100,3 +100,11 @@
 
 ;; Cargo mi theme
 (load-theme 'tangotango)
+
+
+;; Exportar a evernote
+(defun fabri-exportar-a-evernote()
+  (interactive)
+  (setq archivo (replace-regexp-in-string "org" "html" (buffer-name)))
+  (org-table-export (concat "~/evernote/" archivo) "orgtbl-to-html")
+  (shell-command (concat "php -f ~/evernote/exportar.php -- " archivo " &")))
