@@ -108,3 +108,6 @@
   (setq archivo (replace-regexp-in-string "org" "html" (buffer-name)))
   (org-table-export (concat "~/evernote/" archivo) "orgtbl-to-html")
   (shell-command (concat "php -f ~/evernote/exportar.php -- " archivo " &")))
+
+;; xdebug break
+(global-set-key "\C-x\X" "xdebug_break();")
