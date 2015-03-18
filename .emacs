@@ -111,3 +111,6 @@
 
 ;; xdebug break
 (global-set-key "\C-x\X" "xdebug_break();")
+
+;; tabla semanal
+(global-set-key "\C-c\T" "| Nombre | Fecha Inicio | Fecha Fin | Estado | Descripcion | Enlace |")
