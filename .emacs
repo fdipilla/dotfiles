@@ -114,3 +114,7 @@
 
 ;; tabla semanal
 (global-set-key "\C-c\T" "| Nombre | Fecha Inicio | Fecha Fin | Estado | Descripcion | Enlace |")
+
+(defun lenny()
+  (interactive)
+  (insert "( ͡° ͜ʖ ͡°) "))
