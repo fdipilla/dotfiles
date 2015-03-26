@@ -118,3 +118,7 @@
 (defun lenny()
   (interactive)
   (insert "( ͡° ͜ʖ ͡°) "))
+
+(defun kirbi()
+ (interactive)
+ (insert "(つ -‘ _ ‘- )つ"))
