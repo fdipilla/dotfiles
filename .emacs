@@ -128,3 +128,4 @@
 
 (setq fci-rule-column 80)
 (setq fci-rule-character ?‸)
+(setq fci-rule-color "red")
