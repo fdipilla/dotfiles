@@ -122,3 +122,6 @@
 (defun kirbi()
  (interactive)
  (insert "(つ -‘ _ ‘- )つ"))
+
+(setq load-path (cons "~/.emacs.d" load-path))
+(require 'fill-column-indicator)
