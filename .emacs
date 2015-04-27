@@ -127,3 +127,4 @@
 (require 'fill-column-indicator)
 
 (setq fci-rule-column 80)
+(setq fci-rule-character ?‸)
