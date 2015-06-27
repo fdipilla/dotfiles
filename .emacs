@@ -110,6 +110,11 @@
   (delete-matching-lines "var_dump" )
   (pop-global-mark))
 
+(defun clear-debug()
+  (interactive)
+  (var-dump-clear)
+  (xdebug-break-clear))
+
 ;; Cargo mi theme
 (load-theme 'tangotango)
 
