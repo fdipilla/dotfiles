@@ -98,6 +98,12 @@
 (setq load-path (cons "~/geben-0.26" load-path))
 (require 'geben)
 
+(defun xdebug-break-clear()
+  (interactive)
+  (beginning-of-buffer)
+  (delete-matching-lines "xdebug_break()" )
+  (pop-global-mark))
+
 ;; Cargo mi theme
 (load-theme 'tangotango)
 
@@ -129,3 +135,5 @@
 (setq fci-rule-column 80)
 (setq fci-rule-character ?‸)
 (setq fci-rule-color "red")
+
+
