@@ -140,6 +140,9 @@
  (interactive)
  (insert "(つ -‘ _ ‘- )つ"))
 
+;; para los archivos gpg
+(setq epa-file-cache-passphrase-for-symmetric-encryption t)
+
 (setq load-path (cons "~/.emacs.d" load-path))
 (require 'fill-column-indicator)
 
