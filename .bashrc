@@ -14,3 +14,8 @@ alias nautilus='nautilus --no-desktop'
 
 #
 export TERM=xterm-256color
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+export GOROOT=$HOME/bin/go
+export PATH=$PATH:$GOROOT/bin
