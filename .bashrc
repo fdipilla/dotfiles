@@ -19,3 +19,8 @@ export GOROOT=$HOME/bin/go
 export PATH=$PATH:$GOROOT/bin
 
 #
+git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+export PS1="\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\]\[\e[1;37m\]\$(git_branch)\[\033[00m\] \[\e[1;32m\]\$\[\e[m\] "
