@@ -7,6 +7,7 @@ alias grep='grep --colour=auto'
 alias emacs='emacs -nw'
 alias firefoxdev='~/bin/firefoxDE/firefox'
 alias firefox='/opt/firefox-new/firefox'
+
 alias node='~/bin/node/bin/node'
 alias go='~/bin/go/bin/go'
 alias arduino='~/bin/arduino-1.6.5/arduino'
