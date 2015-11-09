@@ -150,4 +150,11 @@
 (setq fci-rule-character ?‸)
 (setq fci-rule-color "red")
 
-
+;; from https://gist.github.com/dbrady/846766
+(defun camelcase-region (start end)
+  "Changes region from snake_case to camelCase"
+  (interactive "r")
+  (save-restriction (narrow-to-region start end)
+                    (goto-char (point-min))
+                    (while (re-search-forward "_\\(.\\)" nil t)
+                      (replace-match (upcase (match-string 1))))))
