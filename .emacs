@@ -60,12 +60,11 @@
                   "DONE"
                   )))
 
-(setq org-todo-keyword-faces
-      '(
-        ("ALTA" :background "red" :foreground "white" )
-        ("MEDIA" :background "yellow" :foreground "white" )
-        ("BAJA" :background "green" :foreground "white" )
-        ))
+  (setq org-todo-keyword-faces
+    '(
+      ("ALTA" :background "#1e1c1c" :foreground "red" :weight bold)
+      ("MEDIA" :background "#1e1c1c" :foreground "yellow" :weight bold)
+      ("BAJA" :background "#1e1c1c" :foreground "green" :weight bold)))
 
 
 
