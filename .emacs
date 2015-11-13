@@ -12,7 +12,7 @@
 (global-set-key "\M-i" "\C-a\C- \C-n\M-w\C-y")
 
 ;;; Con M-p hago un printf de C
-(global-set-key "\M-p" "printf(\"\\n%s\",);") 
+(global-set-key "\M-p" "printf(\"\\n%s\",);")
 
 ;;; Un error_log de php
 (global-set-key "\C-x\p" "error_log(var_export(true));\M-b,\C-b")
@@ -77,10 +77,10 @@
 
 ;; Log diario
 (defun fabri-buen-dia()
-  (interactive)  
+  (interactive)
   (insert  (concat "* " (format-time-string "%d, %b, %Y")
                     "\n"
-                    "** Detalle Horas" 
+                    "** Detalle Horas"
                     "\n"
                     (concat "   <" (format-time-string "%Y-%m-%d %a %H:%M") "> - Llego"))))
 
@@ -157,3 +157,11 @@
                     (goto-char (point-min))
                     (while (re-search-forward "_\\(.\\)" nil t)
                       (replace-match (upcase (match-string 1))))))
+
+(require 'ido)
+(ido-mode t)
+
+
+(require 'ido-vertical-mode)
+(ido-mode 1)
+(ido-vertical-mode 1)
