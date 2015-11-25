@@ -80,9 +80,9 @@
   (interactive)
   (insert  (concat "* " (format-time-string "%d, %b, %Y")
                     "\n"
-                    "** Detalle Horas"
+                    "** Llego"
                     "\n"
-                    (concat "   <" (format-time-string "%Y-%m-%d %a %H:%M") "> - Llego"))))
+                    (concat "   <" (format-time-string "%Y-%m-%d %a %H:%M") ">"))))
 
 (global-set-key (kbd "C-c b") 'fabri-buen-dia)
 
