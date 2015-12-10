@@ -165,3 +165,27 @@
 (require 'ido-vertical-mode)
 (ido-mode 1)
 (ido-vertical-mode 1)
+
+
+(defun tirate-un-query(p1 p2)
+  (interactive "r")
+  (setq query (buffer-substring p1 p2))
+  (switch-to-buffer-other-window "*SQL-testing-resultado*")
+  (org-mode)
+  (beginning-of-buffer)
+  (insert (shell-command-to-string
+           (concat "php ~/.emacs.d/sql_test.php \""
+                   (replace-regexp-in-string "\"" "'" query) " \"")))
+  (beginning-of-buffer)
+  (org-table-align)
+  (beginning-of-buffer)
+  (newline)
+  (newline)
+  (beginning-of-buffer)
+    (other-window -1))
+
+
+(defun mi-sql-mode-custom ()
+  (local-set-key (kbd "C-c C-c") 'tirate-un-query))
+
+(add-hook 'sql-mode-hook 'mi-sql-mode-custom)
