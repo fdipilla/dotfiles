@@ -189,3 +189,6 @@
   (local-set-key (kbd "C-c C-c") 'tirate-un-query))
 
 (add-hook 'sql-mode-hook 'mi-sql-mode-custom)
+
+
+(global-hl-line-mode 1)                                                                                                                                                                                                                       (set-face-background 'hl-line "#333333") 
