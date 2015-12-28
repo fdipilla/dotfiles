@@ -160,12 +160,12 @@
 
 (require 'ido)
 (ido-mode t)
-
-
 (require 'ido-vertical-mode)
-(ido-mode 1)
 (ido-vertical-mode 1)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
 
+(ido-mode 1)
 
 (defun tirate-un-query(p1 p2)
   (interactive "r")
