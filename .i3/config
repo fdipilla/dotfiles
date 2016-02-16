@@ -185,5 +185,11 @@ bindsym Control+Shift+KP_8 exec --no-startup-id ~/squirrel-sql-3.5.0/squirrel-sq
 bindsym Control+F12 exec --no-startup-id amixer -q sset Master 3%+
 bindsym Control+F11 exec --no-startup-id amixer -q sset Master 3%-
 
+# Windows borders
 new_window 1pixel
 new_float 1pixel
+
+client.focused #6093b2 #6093b2 #FFFFFF
+# client.unfocused #444444 #444444 #315858
+# client.focused_inactive #444444 #444444 #2c2c2f
+# client.urgent #383a3b #383a3b #ee0000
