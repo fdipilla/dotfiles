@@ -172,7 +172,7 @@ bar {
 }
 
 # Lockeo de pantalla
-bindsym Mod4+Scroll_Lock exec --no-startup-id i3lock -i /home/fdipilla/Pictures/wallpapers/gurlz/06_.png
+bindsym Mod4+Scroll_Lock exec --no-startup-id i3lock -i /home/fdipilla/Pictures/wallpapers/gurlz/24_.png
 
 # Programas
 bindsym Control+Shift+KP_1 exec --no-startup-id /opt/firefox-last/firefox
@@ -180,6 +180,7 @@ bindsym Control+Shift+KP_2 exec --no-startup-id ~/bin/firefox/firefox
 bindsym Control+Shift+KP_3 exec --no-startup-id /opt/thunderbird-last/thunderbird
 bindsym Control+Shift+KP_7 exec --no-startup-id /usr/share/dbeaver/dbeaver
 bindsym Control+Shift+KP_8 exec --no-startup-id ~/squirrel-sql-3.5.0/squirrel-sql.sh
+bindsym Control+Shift+KP_9 exec --no-startup-id ~/bin/switch-keyboard-layout.sh
 
 # Multimedia
 bindsym Control+F12 exec --no-startup-id amixer -q sset Master 3%+
