@@ -191,7 +191,8 @@
 (add-hook 'sql-mode-hook 'mi-sql-mode-custom)
 
 
-(global-hl-line-mode 1)                                                                                                                                                                                                                       (set-face-background 'hl-line "#333333")
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "#333333")
 
 
 (defun procedure()
@@ -199,3 +200,5 @@
   (insert "select definition from sys.sql_modules where definition like '%%'")
   (backward-char)
   (backward-char))
+
+
