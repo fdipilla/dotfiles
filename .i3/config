@@ -172,7 +172,7 @@ bar {
 }
 
 # Lockeo de pantalla
-bindsym Mod4+Scroll_Lock exec --no-startup-id i3lock -i /home/fdipilla/Pictures/wallpapers/gurlz/24_.png
+bindsym Mod4+Scroll_Lock exec --no-startup-id i3lock -i /home/fdipilla/Pictures/wallpapers/gurlz/24_1.png
 
 # Programas
 bindsym Control+Shift+KP_1 exec --no-startup-id /opt/firefox-last/firefox
