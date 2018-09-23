@@ -98,6 +98,18 @@ set $WS8 ☰
 set $WS9 ⚏
 set $WS0 ♬
 
+
+#set $WS1 🦊
+#set $WS2 💊
+#set $WS3 📟
+#set $WS4 👾
+#set $WS5 🤖
+#set $WS6 🧠
+#set $WS7 💬
+#set $WS8 🎬
+#set $WS9 📷
+#set $WS0 🌐
+
 # switch to workspace
 bindsym $mod+1 workspace $WS1
 bindsym $mod+2 workspace $WS2
